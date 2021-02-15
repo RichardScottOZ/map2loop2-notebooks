@@ -9,6 +9,7 @@
 /model-test*
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+None.png
 
 # IPython
 profile_default/
