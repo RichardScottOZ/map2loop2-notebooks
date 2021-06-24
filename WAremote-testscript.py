@@ -1,32 +1,28 @@
 from map2loop.project import Project
-
+import time
+t0 = time.time()
 proj = Project(
     loopdata_state="WA"
 )
 
 bbox = {
-    "minx": 500102,
-    "miny": 7457565,
-    "maxx": 603064,
-    "maxy": 7567970,
-    "base": -1200,
-    "top": 12000,
+    "minx": 515687.31005864, # region of interest for GMD paper
+    "miny": 7473446.76593407,
+    "maxx": 562666.860106543,
+    "maxy": 7521273.57407786,
+    "base": -3200,
+    "top": 1200,
 }
 proj.update_config(
-    out_dir='./model-test',
-    overwrite='true',
+    out_dir='./gmd-model',
+    overwrite='in-place',
     bbox_3d=bbox,
-    # bbox_3d={
-    #     "minx": 500000,
-    #     "miny": 7490000,
-    #     "maxx": 545000,
-    #     "maxy": 7520000,
-    #     "base": -3200,
-    #     "top": 1200,
-    # },
     proj_crs={'init': 'EPSG:28350'},
-    quiet=True
+    quiet='all'
 )
+proj.config.c_l['intrusive']='banana'
 
 
 proj.run()
+t2 = time.time()
+print("m2l",(t2-t0)/60.0,"minutes")
