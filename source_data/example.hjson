@@ -37,7 +37,7 @@
   "fdip": 'dip',               # field for numeric fault dip value
   "fdipnull": '0',         # text to search for in field defined by fdip to show that this has no known dip
   "fdipdir": 'dip_dir',        # field for text fault dip direction value 
-  "fdipdir_flag": 'alpha',        # flag for text fault dip direction type num e.g. 045 or alpha e.g. southeast    
+  "fdipdir_flag": 'num',        # flag for text fault dip direction type num e.g. 045 or alpha e.g. southeast    
   "fdipest": 'dip_est',        # field for text fault dip estimate value
   "fdipest_vals": 'gentle,moderate,steep',        # text to search for in field defined by fdipest to give fault dip estimate in increasing steepness
   "n": 'name',                 #field that contains information on name of fault (not used??)
