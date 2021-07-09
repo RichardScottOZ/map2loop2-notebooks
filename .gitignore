@@ -11,7 +11,8 @@
 */.ipynb_checkpoints/*
 None.png
 stash/
-
+gmd-model/
+roi.*
 # IPython
 profile_default/
 ipython_config.py
