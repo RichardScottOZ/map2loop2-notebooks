@@ -28,7 +28,7 @@ proj.update_config(
     quiet='all'
 )
 
-proj.config.c_l['intrusive']='banana'
+proj.config.c_l['intrusive']='granite'
 
 proj.run()
 proj_path = proj.config.project_path
