@@ -17,7 +17,7 @@ https://doi.org/10.5194/gmd-2020-400
 1) GMD-testscript.py    
 - This is the non-notebook equivalent of the **Example 1 notebook**.   
 2) exporters.py   
-- Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geohy and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
--     Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
--     Voxel formats supported: omf, geoh5
+- Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geoh5 and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
+* Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
+* Voxel formats supported: omf, geoh5
 
