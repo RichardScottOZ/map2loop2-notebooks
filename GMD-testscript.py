@@ -21,7 +21,7 @@ bbox = {
     "top": 1200,
 }
 proj.update_config(
-    out_dir='./gmd-model',
+    out_dir='./Script_Example',
     overwrite='in-place',
     bbox_3d=bbox,
     proj_crs={'init': 'EPSG:28350'},
