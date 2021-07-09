@@ -1,3 +1,9 @@
+# Example test python script to accompany the GMD paper:
+# Automated geological map deconstruction for 3D model construction using map2loop 1.0 and map2model 1.0 
+# Mark Jessell, Vitaliy Ogarko, Yohan de Rose, Mark Lindsay, Ranee Joshi, Agnieszka Piechocka, Lachlan Grose, 
+# Miguel de la Varga, Laurent Ailleres, Guillaume Pirot
+# https://doi.org/10.5194/gmd-2020-400
+
 from map2loop.project import Project
 import time
 t0 = time.time()
