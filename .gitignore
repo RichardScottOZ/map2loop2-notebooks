@@ -13,6 +13,8 @@ None.png
 stash/
 gmd-model/
 roi.*
+Test/
+model-test2/
 # IPython
 profile_default/
 ipython_config.py
