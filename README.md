@@ -18,6 +18,6 @@ https://doi.org/10.5194/gmd-2020-400
 - This is the non-notebook equivalent of the **Example 1 notebook**.   
 2) exporters.py   
 - Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geoh5 and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
-* Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
-* Voxel formats supported: omf, geoh5
+    - Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
+    - Voxel formats supported: omf, geoh5
 
