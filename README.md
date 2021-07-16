@@ -12,12 +12,13 @@ https://doi.org/10.5194/gmd-2020-400
 - This notebook allows the user to extract information and build 3D models from their own source data. This uses example data and config file found in the source_data directory. Use the **Utility 1** notebook to generate a hjson configuration file and example python script for your own data. 
 4) Utility 1 - Config file generator.ipynb    
 - This notebook interactively creates the hjson and python scripts needed to run models from your own data sources   
+5) Utility 2 - Exporters.ipynb    
+- Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geoh5 and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
+    - Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
+    - Voxel formats supported: omf, geoh5
+   
     
 **Python scripts**    
 1) GMD-testscript.py    
 - This is the non-notebook equivalent of the **Example 1 notebook**.   
-2) exporters.py   
-- Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geoh5 and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
-    - Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
-    - Voxel formats supported: omf, geoh5
 
