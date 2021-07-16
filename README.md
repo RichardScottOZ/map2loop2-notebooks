@@ -14,7 +14,7 @@ https://doi.org/10.5194/gmd-2020-400
 - This notebook interactively creates the hjson and python scripts needed to run models from your own data sources   
 5) Utility 2 - Exporters.ipynb    
 - Code snippets for converting LoopStructural surfaces and voxels into various standard formats. geoh5 and omf require additional libraries to be installed (https://github.com/gmggroup/omf) and (https://github.com/MiraGeoscience/geoh5py)
-    - Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts   
+    - Triangulated surfaces supported: vtk, obj, omf, dxf, geoh5, ts, webgl 
     - Voxel formats supported: omf, geoh5
    
     
