@@ -49,10 +49,16 @@ for layer in surface_verts:
 import pandas as pd
 from os import listdir
 from os.path import isfile, join
-
+from pathlib import Path
+import numpy as np
+from geoh5py.objects import BlockModel
+from geoh5py.workspace import Workspace
+from geoh5py.objects import Surface
+import omf
+obj_path_dir=vtk_path+model_name+'/'
 def geoh5_create_surface_data(obj_path_dir):
 
-    h5file_path = Path('.') / r"loop.geoh5"
+    h5file_path = obj_path_dir+"loop.geoh5"
 
     workspace = Workspace(h5file_path)
     onlyfiles = [f for f in listdir(obj_path_dir) if isfile(join(obj_path_dir, f))]
