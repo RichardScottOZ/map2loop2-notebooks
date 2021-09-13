@@ -28,7 +28,7 @@ proj.update_config(
     quiet='all'
 )
 
-proj.config.c_l['intrusive']='granite'
+proj.config.c_l['intrusive']='mafic intrusive'
 
 proj.run()
 proj_path = proj.config.project_path
@@ -90,27 +90,27 @@ f.write(ostr)
 f.close()
 
 
-fault_params = {'interpolatortype':'FDI',
+fault_params = {'interpolatortype':'PLI',
                 'nelements':1e5,
                 'step':10,
                 'fault_buffer':0.3,
-                'solver':'cg',
+                #'solver':'cg',
                 'cpw':10,
                 'npw':10}
-foliation_params = {'interpolatortype':'FDI' , # 'interpolatortype':'PLI',
+foliation_params = {'interpolatortype':'PLI' , # 'interpolatortype':'PLI',
                     'nelements':1e5,  # how many tetras/voxels
                     'buffer':1.8,  # how much to extend nterpolation around box
-                    'solver':'cg',
+                    #'solver':'cg',
                     'cpw':10,
                     'npw':10}
-model, m2l_data = GeologicalModel.from_map2loop_directory(proj_path,
+model = GeologicalModel.from_map2loop_directory(proj_path,
                                                           #    evaluate=False,
                                                           fault_params=fault_params,
                                                           rescale=False,
                                                           foliation_params=foliation_params,
                                                          )
 #model.to_file(output_path + "/model.pickle")    
-
+model.update()
 view = LavaVuModelViewer(model,vertical_exaggeration=1) 
 view.nsteps = np.array([200,200,200])
 view.nsteps=np.array([50,50,50])
